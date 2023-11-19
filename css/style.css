@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-dark: #202020;
+  --bg-super-dark: #1b1b1b;
+  --color-light: #ffffff;
+  --accent-color-yellow: #ffff00;
+  --accent-color-blue: #0095f6;
+  --transition: 250ms ease-in-out;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-light);
+  background-color: var(--bg-super-dark);
+  height: 100vh;
+}
+
+/*! navigation */
+.navbar {
+  background-color: var(--bg-dark);
+}
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  border: none;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: var(--color-light) !important;
+  color: var(--bg-dark) !important;
+  transform: scale(1);
+  transition: transform var(--transition), color var(--transition),
+    background-color var(--transition);
+}
+.btn:hover {
+  background-color: var(--accent-color-blue) !important;
+  color: var(--color-light) !important;
+  transform: scale(1.2);
+}
+
+/*! footer */
+footer {
+  background-color: var(--bg-dark);
+}
+.social-links a {
+  color: var(--color-light);
+  fill: inherit;
+  transform: scale(1);
+  transition: transform var(--transition), color var(--transition);
+}
+.social-links a:hover {
+  color: var(--accent-color-blue);
+  transform: scale(1.5);
+}
+
+/*! home page */
+.home header .h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent-color-yellow);
+}
+.home header h1 {
+  letter-spacing: 0.1em;
+}
+
+.home header span,
+.home main h3 {
+  color: var(--accent-color-yellow);
+}
+
+/*! contacts page */
+.contacts h3 {
+  color: var(--accent-color-yellow);
+}
+.link {
+  color: var(--color-light);
+  transition: color var(--transition);
+}
+.link:hover {
+  color: var(--accent-color-blue);
+}
+
+/*! about page*/
+.about .h5 {
+  color: var(--accent-color-yellow);
+}
+
+/*! works page*/
+.works .h4,
+.works h2 {
+  color: var(--accent-color-yellow);
+}
+.works header a {
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 575px) {
+  .home header .btn {
+    font-size: 14px;
+  }
+}
+/* @media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
+} */
